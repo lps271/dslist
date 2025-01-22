@@ -120,7 +120,7 @@ public class Game {
 	}
 
 
-	public String getShorDescription() {
+	public String getShortDescription() {
 		return shortDescription;
 	}
 

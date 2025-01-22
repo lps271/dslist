@@ -20,8 +20,8 @@ public class GameService {
 	@Transactional(readOnly = true)
 	public GameDTO findById(Long gameId) {
 		Game result = gameRepository.findById(gameId).get();
+		
 		GameDTO dto = new GameDTO(result);
-		System.out.print(dto.getShortDescription());
 		return dto;
 	}
 	
